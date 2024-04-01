@@ -473,3 +473,16 @@ a.hero-btn:hover {
 .hov-btn {
     cursor: pointer;
 }
+
+.cnc-btn {
+    color: #000; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+    cursor: pointer; 
+  
+  }
+  
+  .cnc-btn:hover {
+    color: #ff0000; 
+  }
+  
