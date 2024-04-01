@@ -1,76 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <link rel="stylesheet" href="/css/styleOfHomePage.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styleOfHomePage.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <div class="log-txt"><strong>Rolling</strong></div>
-      <div class="search">
-        <input type="search" name id placeholder="Search Rolling">
-      </div>
-      <div class="menu-bar">
-        <div>Explore</div>
-        <div>Activity</div>
-        <div>Feed</div>
-        <div>Bids</div>
-      </div>
-      <div class="icon-pre">
-        <img src="/image/flash.png" alt>
-      </div>
-      <button class="cnc-btn">Connect Wallet</button>
-    </div>
-    <div class="container-wrapper">
-      <div class="custom-container1">
-      </div>
-      <!-- -------------------------------------------------------- -->
-      <div class="box-card">
-        <div class="box-card-intro">
-          <div class="box-card-txt"><strong>The circle's pristine
-              <br>cleanliness</strong></div>
-          <div class="nickname-brd"><img class="pfp-1" src="/image/pfp-1.png"
-              alt><p class="nickname">Tung Tran</p></div>
-        </div>
-        <div class="box-card-center">
-          <div class="box-card-center-txt-1">
-            <div class="random-1">Current Bid</div>
-            <div class="random-4">
-              <div class="random-2">0.85 ETH</div>
-              <div class="random-3">$2,169.42</div>
-            </div>
+    <header class="site-header">
+      <div class="container">
+        <div class="header flex">
+          <a href="#" class="header-logo"> Rolling </a>
+          <div class="input-wrapper">
+            <img src="../image/search.svg" alt />
+            <input type="text" placeholder="Search Rolling" />
           </div>
-          <div class="liner"></div>
-          <div>
-            <div>
-              <div>Auction ends in</div>
-              <div>
-                <div>3 16 58</div>
-                <div style="color: #8E8E93;">Hours Minutes Seconds</div>
+          <ul class="header-list flex">
+            <li class="header-item">
+              <a class="header-link" href="#">Explore</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="#">Activity</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="#">Feed</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link" href="#">Bids</a>
+            </li>
+            <li class="header-icon">
+              <img src="../image/flash.png" alt />
+            </li>
+            <li class="header-btn">
+              <a href="#">Connect Wallet</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="site-main">
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero flex">
+            <img class="unsplash" src="../image/unsplash.png" alt />
+            <div class="card flex">
+              <h2>The circle's pristine cleanliness</h2>
+              <div class="flex card-name">
+                <img src="../image/pfp-1.png" alt />
+                <p>Tung Tran</p>
               </div>
+              <div class="flex hero-card__wrapper">
+                <div class="hero-card__text">
+                  <h3>Current Bid</h3>
+                  <strong>0.85 ETH</strong>
+                  <p>$2,169.42</p>
+                </div>
+                <div class="hero-card__text">
+                  <h3>Auction ends in</h3>
+                  <ul class="flex">
+                    <li>
+                      <strong>3</strong>
+                      <p>Hourse</p>
+                    </li>
+                    <li>
+                      <strong>3</strong>
+                      <p>Minutes</p>
+                    </li>
+                    <li>
+                      <strong>3</strong>
+                      <p>salom</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button class="hero-btn">Place a bid</button>
+              <a href="#" class="hero-btn a-href">View artwork</a>
             </div>
           </div>
         </div>
-        <div class="box-card-footer">
-          <div style="text-align: center;">
-            <button class="place-bid-btn">Place a bid</button>
-            <a href class="view-artwork-link">View artwork</a>
+      </section>
+      <section class="live-section">
+        <div class="container">
+          <div class="live">
+            <div class="live-header flex">
+              <h2>Live auctions 🔥</h2>
+              <p>View all auctions</p>
+            </div>
+            <ul class="live-list flex">
+              <li class="live-item">
+                <img src="../image/product-1.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                  <span>01:27:46 left</span>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/product-1.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>The mystery of the black square</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-jenny.png" alt />
+                      <p> Jenny Wilson</p>
+                    </div>
+                    <strong>0.24 ETH</strong>
+                  </div>
+                  <span>01:27:46 left</span>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/product-1.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>Pink Cloud 🌥</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-floyd.png" alt />
+                      <p> Floyd Miles</p>
+                    </div>
+                    <strong>0.3 ETH</strong>
+                  </div>
+                  <span>02:02:13 left</span>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/product-1.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Ethereum</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-jane.png" alt />
+                      <p> Jane Cooper</p>
+                    </div>
+                    <strong>0.12 ETH</strong>
+                  </div>
+                  <span>02:14:02 left</span>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <!-- -------------------------------------------------- -->
+      </section>
 
-      <div class="product-card-box">
-        <div class="proporties">
-          <div class="pro-1">Live auctions 🔥 </div>
-          <div class="pro-2">View all auctions</div>
+      <section class="live-section futured-section">
+        <div class="container">
+          <div class="live featured">
+            <div class="live-header featured-header flex">
+              <h2>Featured ✨</h2>
+              <p>View all</p>
+            </div>
+            <ul class="live-list futured-list flex">
+              <li class="live-item">
+                <img src="../image/product-1.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/soft-2.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/soft-3.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/soft-4.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/soft-5.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/soft-6.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/soft-7.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/soft-8.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/soft-9.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/soft-10.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/soft-11.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                </div>
+              </li>
+              <li class="live-item">
+                <img src="../image/product-1.png" alt />
+                <div class="live-item__wrapper">
+                  <h3>3D Soft Curves</h3>
+                  <p>Current Bid</p>
+                  <div class="flex">
+                    <div class="flex live-profile">
+                      <img src="../image/pfp-2.png" alt />
+                      <p> Esther Howard</p>
+                    </div>
+                    <strong>0.85 ETH</strong>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="load-more-btn">Load More</button>
+          </div>
         </div>
-        <div>
-          <div>03</div>
-        </div>
-      </div>
+      </section>
 
-    </body>
-  </html>
+      <section class="top-creators">
+        <div class="live container">
+          <div class="live-header flex top-header">
+            <h2>Top Creators</h2>
+            <p>View all</p>
+          </div>
+          <ul class="creators-list flex">
+            <li class="creators-card flex">
+              <img src="/image/Rectangle 13.svg" alt />
+              <div class="flex ellipse-wrapper">
+                <img src="/image/Ellipse 5.png" alt />
+                <div class="card-cont">
+                  <div class="flex card-nick-name">
+                    <h3>Tung Tran</h3>
+                    <img src="/image/Vector.svg" alt />
+                  </div>
+                  <p>
+                    Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                    #bitcoin since 2012.
+                  </p>
+                  <div class="flex space followers-btn">
+                    <h3>3k Followers</h3>
+                    <button>Follow</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="creators-card flex">
+              <img src="/image/img-2.png" alt />
+              <div class="flex ellipse-wrapper">
+                <img src="/image/c-1.png" alt />
+                <div class="card-cont">
+                  <div class="flex card-nick-name">
+                    <h3>Wade Warren</h3>
+                    <img src="/image/Vector.svg" alt />
+                  </div>
+                  <p>
+                    Bad Artist, NFT Enthusiast, Metaverse Innovator
+                    Supporting #bitcoin since 2012.
+                  </p>
+                  <div class="flex space followers-btn">
+                    <h3>8k Followers</h3>
+                    <button>Follow</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="creators-card flex">
+              <img src="/image/img-3.png" alt />
+              <div class="flex ellipse-wrapper">
+                <img src="/image/c-2.png" alt />
+                <div class="card-cont">
+                  <div class="flex card-nick-name">
+                    <h3>Arlene McCoy</h3>
+                    <img src="/image/Vector.svg" alt />
+                  </div>
+                  <p>
+                    Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                    #bitcoin since 2012.
+                  </p>
+                  <div class="flex space followers-btn">
+                    <h3>650 Followers</h3>
+                    <button>Follow</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="creators-card flex">
+              <img src="/image/img-4.png" alt />
+              <div class="flex ellipse-wrapper">
+                <img src="/image/c-4.png" alt />
+                <div class="card-cont">
+                  <div class="flex card-nick-name">
+                    <h3>Dianne Russell</h3>
+                    <img src="/image/Vector.svg" alt />
+                  </div>
+                  <p>
+                    Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                    #bitcoin since 2012.
+                  </p>
+                  <div class="flex space followers-btn">
+                    <h3>1K Followers</h3>
+                    <button>Follow</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="creators-card flex">
+              <img src="/image/Rectangle 13.svg" alt />
+              <div class="flex ellipse-wrapper">
+                <img src="/image/c-5.png" alt />
+                <div class="card-cont">
+                  <div class="flex card-nick-name">
+                    <h3>Savannah Nguyen</h3>
+                    <img src="/image/Vector.svg" alt />
+                  </div>
+                  <p>
+                    Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                    #bitcoin since 2012.
+                  </p>
+                  <div class="flex space followers-btn">
+                    <h3>238 Followers</h3>
+                    <button>Follow</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="creators-card flex">
+              <img src="/image/img-2.png" alt />
+              <div class="flex ellipse-wrapper">
+                <img src="/image/c-6.png" alt />
+                <div class="card-cont">
+                  <div class="flex card-nick-name">
+                    <h3>Jenny Wilson</h3>
+                    <img src="/image/Vector.svg" alt />
+                  </div>
+                  <p>
+                    Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                    #bitcoin since 2012.
+                  </p>
+                  <div class="flex space followers-btn">
+                    <h3>64 Followers</h3>
+                    <button>Follow</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="creators-card flex">
+              <img src="/image/img-3.png" alt />
+              <div class="flex ellipse-wrapper">
+                <img src="/image/c-7.png" alt />
+                <div class="card-cont">
+                  <div class="flex card-nick-name">
+                    <h3>Brooklyn Simmons</h3>
+                    <img src="/image/Vector.svg" alt />
+                  </div>
+                  <p>
+                    Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                    #bitcoin since 2012.
+                  </p>
+                  <div class="flex space followers-btn">
+                    <h3>2K Followers</h3>
+                    <button>Follow</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="creators-card flex">
+              <img src="/image/img-4.png" alt />
+              <div class="flex ellipse-wrapper">
+                <img src="/image/c-8.png" alt />
+                <div class="card-cont">
+                  <div class="flex card-nick-name">
+                    <h3>Theresa Webb</h3>
+                    <img src="/image/Vector.svg" alt />
+                  </div>
+                  <p>
+                    Bad Artist, NFT Enthusiast, Metaverse Innovator Supporting
+                    #bitcoin since 2012.
+                  </p>
+                  <div class="flex space followers-btn">
+                    <h3>127 Followers</h3>
+                    <button>Follow</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="creators-btn">View all creators</button>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+			<div class="container">
+				<div class="footer">
+					<div class="footer-body flex">
+						<ul class="footer-list">
+							<li class="footer-item">
+								<h3>Get the latest Rolling updates</h3>
+							</li>
+							<li class="footer-item">
+								<input
+									type="text"
+									placeholder="Enter your email"
+								/>
+								<span class="hov-btn">Subscribe</span>
+							</li>
+						</ul>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<h3>Rolling</h3>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-link"> Explore </a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-link"> Blog </a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-link"> About us </a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-link">
+									Become a partner
+								</a>
+							</li>
+						</ul>
+						<ul class="footer-list">
+							<li class="footer-item">
+								<h3>Community</h3>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-link">
+									Community Guidelines
+								</a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-link"> Roll Token </a>
+							</li>
+							<li class="footer-item">
+								<a href="#" class="footer-link"> Discussion </a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-bottom flex">
+						<ul class="flex">
+							<li>
+								<h3>Rolling</h3>
+							</li>
+							<li>
+								<a href="">Terms of Service</a>
+							</li>
+							<li>
+								<a href="">Privacy</a>
+							</li>
+						</ul>
+						<div class="footer-wrapper flex">
+							<img src="/image/Frame.svg" alt="" />
+							<img src="/image/Frame-1.svg" alt="" />
+							<img src="/image/Frame-2.svg" alt="" />
+							<img src="/image/Frame-3.svg" alt="" />
+							<img src="/image/Frame-4.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+      </footer>
+  </body>
+</html>
